@@ -44,7 +44,13 @@
             </array>
         </config-file>
         
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
+            <string>This application would like to use your current location to display it on the application, also for directions and estimation of your travel times. It is secure and private.</string>
+        </config-file>
         
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
+            <string>This application would like to use your current location to display it on the application, also for directions and estimation of your travel times. It is secure and private.</string>
+        </config-file>
         
     </platform>
     
