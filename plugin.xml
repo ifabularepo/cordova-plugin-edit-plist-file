@@ -45,13 +45,16 @@
         </config-file>
         
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-            <string>This application would like to use your current location to display it on the application, also for directions and estimation of your travel times. It is secure and private.</string>
+            <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background.</string>
         </config-file>
         
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-            <string>This application would like to use your current location to display it on the application, also for directions and estimation of your travel times. It is secure and private.</string>
+            <string>This app requires access to your location when the screen is on and the app is displayed.</string>
         </config-file>
         
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
+            <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background.</string>
+        </config-file>
     </platform>
     
 </plugin>
