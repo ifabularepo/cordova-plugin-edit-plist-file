@@ -29,7 +29,7 @@
     
     <!-- ios -->
     <platform name="ios">
-        <preference name="ALWAYS_USAGE_DESCRIPTION" default="This app always requires location tracking" />
+        <preference name="ALWAYS_USAGE_DESCRIPTION" default="This application would like to use your current location to display it on the application" />
         <!-- iOS9 whitelisting -->
         <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
             <array>
@@ -48,9 +48,6 @@
             <string>$ALWAYS_USAGE_DESCRIPTION</string>
         </config-file>
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-            <string>$ALWAYS_USAGE_DESCRIPTION</string>
-        </config-file>
-        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
             <string>$ALWAYS_USAGE_DESCRIPTION</string>
         </config-file>
     </platform>
