@@ -48,9 +48,9 @@
             <string>$ALWAYS_USAGE_DESCRIPTION</string>
         </config-file>
         
-        <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+        <config-file target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
             <string>This Application need your location access to find branch nearby</string>
-        </edit-config>
+        <config-file>
     </platform>
     
 </plugin>
