@@ -44,13 +44,9 @@
             </array>
         </config-file>
         
-        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-            <string>$ALWAYS_USAGE_DESCRIPTION</string>
-        </config-file>
-        
-        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-            <string>This Application need your location access to find branch nearby</string>
-        </config-file>
+        <edit-config target="NSLocationWhenInUseUsageDescription" file="*-Info.plist" mode="merge">
+            <string>need location access to find things nearby</string>
+        </edit-config>
     </platform>
     
 </plugin>
