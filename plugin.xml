@@ -45,15 +45,15 @@
         
         
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">   
-                <string>This apps require to get nearby branch location in foreground</string>
+                <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the foreground.</string>
         </config-file>
         
         <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription" mode="merge">  
-                <string>This apps require to get nearby branch location in foreground and background</string>
+                <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background and foreground.</string>
         </config-file>
         
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" mode="merge"> 
-                <string>This apps require to always get nearby branch location </string>
+                <string>This app requires constant access to your location in order to track your position, even when the screen is off </string>
        </config-file>
         
     </platform>
