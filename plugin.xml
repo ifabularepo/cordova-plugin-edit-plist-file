@@ -44,7 +44,7 @@
         </config-file>
         
         <!-- required background modes:  App registers for location updates -->
-        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" mode="replace">
+        <config-file file="*-Info.plist" target="NSLocationAlwaysUsageDescription" mode="replace">
            <array>    
                <dict>
                    <key>NSLocationAlwaysUsageDescription</key>
@@ -52,7 +52,7 @@
                 </dict>
             </array>
         </config-file>
-        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="replace">
+        <config-file file="*-Info.plist" target="NSLocationWhenInUseUsageDescription" mode="replace">
             <array>    
                <dict>
                    <key>NSLocationWhenInUseUsageDescription</key>
@@ -60,7 +60,7 @@
                 </dict>
             </array>
         </config-file>
-        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription" mode="replace">
+        <config-file file="*-Info.plist" target="NSLocationAlwaysAndWhenInUseUsageDescription" mode="replace">
             <array>    
                <dict>
                    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
