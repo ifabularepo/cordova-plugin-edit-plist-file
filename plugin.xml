@@ -44,7 +44,7 @@
         </config-file>
         
         
-        <config-file file="*-Info.plist" target="NSLocationWhenInUseUsageDescription" mode="merge">
+        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">
             <array>    
                <dict>
                    <key>NSLocationWhenInUseUsageDescription</key>
