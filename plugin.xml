@@ -43,15 +43,7 @@
             </array>
         </config-file>
         
-        <!-- required background modes:  App registers for location updates -->
-        <config-file file="*-Info.plist" target="NSLocationAlwaysUsageDescription" mode="replace">
-           <array>    
-               <dict>
-                   <key>NSLocationAlwaysUsageDescription</key>
-                   <string>This app need requires location access to get nearby branch in your area</string>
-                </dict>
-            </array>
-        </config-file>
+        
         <config-file file="*-Info.plist" target="NSLocationWhenInUseUsageDescription" mode="replace">
             <array>    
                <dict>
@@ -60,14 +52,7 @@
                 </dict>
             </array>
         </config-file>
-        <config-file file="*-Info.plist" target="NSLocationAlwaysAndWhenInUseUsageDescription" mode="replace">
-            <array>    
-               <dict>
-                   <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-                   <string>This app need requires location access in background and foreground to get nearby branch in your area </string>
-                </dict>
-            </array>
-        </config-file>
+        
     </platform>
     
 </plugin>
