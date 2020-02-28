@@ -44,11 +44,11 @@
         </config-file>
         
         
-        <config-file file="*-Info.plist" target="NSLocationWhenInUseUsageDescription" mode="replace">
+        <config-file file="*-Info.plist" target="NSLocationWhenInUseUsageDescription" mode="merge">
             <array>    
                <dict>
                    <key>NSLocationWhenInUseUsageDescription</key>
-                   <string>This app need requires location tracking in foreground to get nearby branch in your area</string>
+                   <string>to get nearby branch location in foreground</string>
                 </dict>
             </array>
         </config-file>
