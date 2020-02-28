@@ -48,7 +48,25 @@
             <array>    
                <dict>
                    <key>NSLocationWhenInUseUsageDescription</key>
-                   <string>to get nearby branch location in foreground</string>
+                   <string>This apps require to get nearby branch location in foreground</string>
+                </dict>
+            </array>
+        </config-file>
+        
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription" mode="merge">
+            <array>    
+               <dict>
+                   <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+                   <string>This apps require to get nearby branch location in foreground and background</string>
+                </dict>
+            </array>
+        </config-file>
+        
+        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" mode="merge">
+            <array>    
+               <dict>
+                   <key>NSLocationAlwaysUsageDescription</key>
+                   <string>This apps require to always get nearby branch location </string>
                 </dict>
             </array>
         </config-file>
