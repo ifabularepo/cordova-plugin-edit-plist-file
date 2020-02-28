@@ -56,6 +56,18 @@
                 <string>This app requires constant access to your location in order to track your position, even when the screen is off </string>
        </config-file>
         
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription" mode="merge">  
+                <string>This application need to browse photo gallery to take photo for photo profile in application.</string>
+        </config-file>
+        
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription" mode="merge"> 
+                <string>This app requires photo library access to function properly.</string>
+       </config-file>
+        
+        <config-file target="*-Info.plist" parent="NSCameraUsageDescription" mode="merge"> 
+                <string>This app requires camera photo access to function properly.</string>
+       </config-file>
+        
     </platform>
     
 </plugin>
