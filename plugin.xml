@@ -29,8 +29,7 @@
     
     <!-- ios -->
     <platform name="ios">
-        <preference name="ALWAYS_USAGE_DESCRIPTION" default="This application would like to use your current location to display it on the application" />
-        <!-- iOS9 whitelisting -->
+         <!-- iOS9 whitelisting -->
         <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
             <array>
                 <string>twitter</string>
@@ -45,20 +44,29 @@
         </config-file>
         
         <!-- required background modes:  App registers for location updates -->
-        <preference name="ALWAYS_USAGE_DESCRIPTION" default="This app always requires location tracking" />
-        <preference name="MOTION_USAGE_DESCRIPTION" default="This app requires motion detection" />
-
         <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription">
-            <string>$ALWAYS_USAGE_DESCRIPTION</string>
+           <array>    
+               <dict>
+                   <key>NSLocationAlwaysUsageDescription</key>
+                   <string>This app need requires location tracking</string>
+                </dict>
+            </array>
         </config-file>
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
-            <string>$ALWAYS_USAGE_DESCRIPTION</string>
+            <array>    
+               <dict>
+                   <key>NSLocationWhenInUseUsageDescription</key>
+                   <string>This app need requires location tracking</string>
+                </dict>
+            </array>
         </config-file>
         <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription">
-            <string>$ALWAYS_USAGE_DESCRIPTION</string>
-        </config-file>
-        <config-file target="*-Info.plist" parent="NSMotionUsageDescription">
-            <string>$MOTION_USAGE_DESCRIPTION</string>
+            <array>    
+               <dict>
+                   <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+                   <string>This app need requires location tracking</string>
+                </dict>
+            </array>
         </config-file>
     </platform>
     
