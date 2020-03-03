@@ -43,28 +43,31 @@
             </array>
         </config-file>
         
-        
-        <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription" mode="merge">   
-                <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the foreground.</string>
-        </config-file>
-        
-        <config-file target="*-Info.plist" parent="NSLocationAlwaysAndWhenInUseUsageDescription" mode="merge">  
+        <config-file parent="NSLocationAlwaysAndWhenInUseUsageDescription" target="*-Info.plist">  
                 <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the background and foreground.</string>
         </config-file>
         
-        <config-file target="*-Info.plist" parent="NSLocationAlwaysUsageDescription" mode="merge"> 
+        <config-file parent="NSLocationWhenInUseUsageDescription" target="*-Info.plist">   
+                <string>This app requires constant access to your location in order to track your position, even when the screen is off or the app is in the foreground.</string>
+        </config-file>
+         
+        <config-file parent="NSLocationUsageDescription" target="*-Info.plist"> 
                 <string>This app requires constant access to your location in order to track your position, even when the screen is off </string>
-       </config-file>
+        </config-file>
         
-        <config-file target="*-Info.plist" parent="NSPhotoLibraryAddUsageDescription" mode="merge">  
+        <config-file parent="NSLocationAlwaysUsageDescription" target="*-Info.plist"> 
+                <string>This app requires constant access to your location in order to track your position, even when the screen is off </string>
+        </config-file>
+        
+        <config-file parent="NSPhotoLibraryAddUsageDescription" target="*-Info.plist">  
                 <string>This application need to browse photo gallery to take photo for photo profile in application.</string>
         </config-file>
         
-        <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription" mode="merge"> 
+        <config-file parent="NSPhotoLibraryUsageDescription" target="*-Info.plist"> 
                 <string>This app requires photo library access to function properly.</string>
        </config-file>
         
-        <config-file target="*-Info.plist" parent="NSCameraUsageDescription" mode="merge"> 
+        <config-file parent="NSCameraUsageDescription" target="*-Info.plist"> 
                 <string>This app requires camera photo access to function properly.</string>
        </config-file>
         
