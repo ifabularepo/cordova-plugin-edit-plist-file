@@ -71,10 +71,6 @@
                 <string>This app requires camera photo access to function properly.</string>
        </config-file>
         
-        <config-file target="*-Info.plist" parent="KeyboardDisplayRequiresUserAction" mode="merge"> 
-                <string>false</string>
-       </config-file>
-        
         
     </platform>
     
