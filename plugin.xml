@@ -71,6 +71,10 @@
                 <string>This app requires camera photo access to function properly.</string>
        </config-file>
         
+        <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription" mode="merge"> 
+                <string>This app requires bluetooth access to function properly.</string>
+       </config-file>
+        
         
     </platform>
     
