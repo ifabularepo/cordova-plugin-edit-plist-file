@@ -29,24 +29,12 @@
     
     <!-- ios -->
     <platform name="ios">
-         <!-- iOS9 whitelisting -->
-        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
-            <array>
-                <string>twitter</string>
-                <string>fb</string>
-                <string>whatsapp</string>
-                <string>itms-apps</string>
-                <string>youtube</string>
-                <string>soundcloud</string>
-                <string>fb-messenger</string>
-                <string>instagram</string>
-                
-                 <!-- Facebook -->
-                <string>fbapi</string>
-                <string>fb-messenger-api</string>
-                <string>fbauth2</string>
-                <string>fbshareextension</string>
-            </array>
+
+        <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+            <dict>
+                <key>NSAllowsArbitraryLoads</key>
+                <true/>
+            </dict>
         </config-file>
         
         
