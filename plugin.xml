@@ -63,7 +63,7 @@
        </config-file>
         
         <config-file target="*-Info.plist" parent="NSCameraUsageDescription" mode="merge"> 
-                <string>This app requires camera photo access to function properly.</string>
+                <string>Need to access your camera to capture a photo add and update profile picture.</string>
        </config-file>
         
         <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription" mode="merge"> 
