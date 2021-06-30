@@ -63,7 +63,7 @@
        </config-file>
         
         <config-file target="*-Info.plist" parent="NSCameraUsageDescription" mode="merge"> 
-                <string>Need to access your camera to capture a photo add and update profile picture.</string>
+                <string>Granting access will allow you to take photos and add them to attachment fields.</string>
        </config-file>
         
         <config-file target="*-Info.plist" parent="NSBluetoothPeripheralUsageDescription" mode="merge"> 
